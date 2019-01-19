@@ -1,0 +1,286 @@
+
+body{ font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    line-height: normal;}
+
+    /* Header and Navigation Format Style */
+
+header{
+    background-color: rgba(196, 196, 196, 0.3);
+    position: fixed;
+    width: 90%;
+    height: 100px;
+    margin-left:80px;
+    top: 0px;
+    
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+    float: left;
+}
+
+.logo-name{
+    color:rgb(12, 8, 228);
+    padding-left: 50px;
+    height: 20px;
+    float: left;
+    display: inline-block;
+
+}
+
+
+nav{
+    
+    width: 100%;
+    padding-top:15px;
+    height: 70px;
+    display: inline-block;
+    
+}
+
+ul{
+    width: 45%;
+    float: right;
+}
+
+ul a{
+    color: black;
+    padding-left: 70px;
+}
+
+li{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #000000;
+    list-style: none;
+    display: inline;
+}
+
+/*       Format Style Image and text homepage */
+.image-header{
+    width: 90%;
+    margin-left:80px;
+    height: 100%;
+    
+    display: inline-block;
+
+}
+
+
+#img-home{
+    float:left;
+    width: 40%;
+    height: 700px;
+    opacity: 0.8;
+
+}
+
+.text{
+    width:35%; 
+    margin-top: 250px;
+    margin-right: 150px;
+    float:right;
+}
+
+
+
+/*       Format Style About US */
+
+    #about{
+        margin-top: 120px;
+        height: 100%;
+
+
+    }
+    .about-page{
+    align-items: center;
+    margin-top: 250px;
+    width: 100%;
+
+
+    }
+
+    .about-card{
+        margin-left: 100px;
+        border: solid 1px grey;
+        border-radius: 15px;
+        width: 25%;
+        display: inline-block;
+    }
+
+    .about-card img{
+        border: solid 1px grey;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+        
+    }
+
+
+    /*       Format Style Blog */
+
+    #blog-container{  
+        width: 90%;
+        height: 100%;
+        margin-top:80px;
+        margin-left:80px;
+        display: inline-block;
+    }
+
+    #blog-container h2{
+        padding-bottom: 25px;
+        color:rgb(18, 54, 214)
+
+    }
+    
+    #blog{
+        background-color: rgba(196, 196, 196, 0.2);
+        width: 70%;
+        float: left;
+
+    }
+
+    .article-blog{
+        color: rgb(8, 37, 8);
+        width: auto;
+        margin-top:25px;
+        border:solid 1px rgb(58, 57, 57);
+        border-radius: 15px;
+        padding:18px;
+
+
+    }
+
+    /*       Format Style Aside Block */
+
+    
+    #aside-blog{
+        border:solid 1px rgb(53, 33, 33);
+        border-radius: 15px;
+        padding-left: 25px;
+        width: 25%;
+        float: right;
+        background-color: rgba(196, 196, 196, 0.2);
+        border-radius: 15px;
+        height:650px;
+        margin-top:25px;
+        
+    }
+
+
+    #aside-blog h5{
+    height: 45px;;
+    width: 35%;
+    margin: auto;
+}
+
+#aside-blog a{
+    
+    padding-top:15px;
+
+    
+}
+
+/*       Format Style Business Card Block */
+
+#contact{
+    
+    width: 90%;
+    height: 450px;
+    margin-left:80px;
+    margin-top: 70px;
+
+}
+
+#business-card{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 75px;
+    width: 45%;
+    display: inline-block;
+
+}
+
+#contact p{
+    font-style: italic;
+    font-size: 25px;
+    width: 75%;
+    display: inline-block;
+    height:auto;
+}
+
+#img-contact{
+    position: absolute;
+    opacity: 0.5;
+    width: 90%;
+    height: 450px;
+    border: solid 1px grey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    float: right;
+
+    
+}
+
+.ico-bild{
+    width: 55px;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#ico{
+    float:right;
+    display: block;
+    margin-top: 290px;
+    margin-right: 80px;
+
+}
+
+
+#ico-social-2 a {
+    margin-top: 25px;
+
+}
+
+
+/*       Format Style Footer */
+
+footer{
+    background-color: grey;
+    width: 90%;
+    height: 180px;
+    margin-left:80px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+
+}
+
+#copy-foot{
+    float: right;
+
+
+}
+
+footer a{
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+footer p{
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-right: 45px;
+}
