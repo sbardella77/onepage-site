@@ -1,34 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton|Montserrat+Alternates:300,400,500i|Varela|Yellowtail');
 
-body{ font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+body{ 
     font-style: normal;
-    line-height: normal;}
+    line-height: normal;
+    color: #2E2EDA;
+}
 
-    /* Header and Navigation Format Style */
-
-header{
-    background-color: rgba(196, 196, 196, 0.3);
-    position: fixed;
-    width: 90%;
-    height: 100px;
-    margin-left:80px;
-    top: 0px;
+h2{
+    text-align: center;
+    font-size: 30%;;
+    font-weight: lighter;   
     
 }
 
-.clearfix {
-    overflow: auto;
-}
+header::after{content:'';display: table; clear:both;}
+    /* Header and Navigation Format Style */
 
+    header{
+        background-color: rgba(196, 196, 196, 0.3);
+        position: fixed;
+        width:100%;
+        height: 100px;
+        top: 0px;
+        
+    }
 a{
     text-decoration: none;
     float: left;
 }
 
 .logo-name{
+    font-family: 'Monoton', cursive;
     color:rgb(12, 8, 228);
+    font-size: 25px;
+    letter-spacing: 3px;
     padding-left: 50px;
     height: 20px;
-    float: left;
     display: inline-block;
 
 }
@@ -49,49 +57,83 @@ ul{
 }
 
 ul a{
-    color: black;
+    color:rgb(12, 8, 228);
     padding-left: 70px;
 }
 
 li{
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
     line-height: normal;
     font-size: 16px;
-    color: #000000;
     list-style: none;
     display: inline;
 }
 
 /*       Format Style Image and text homepage */
 .image-header{
-    width: 90%;
-    margin-left:80px;
-    height: 100%;
-    
+  /*  border:solid 2px grey;  */  
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    align-items: center;
     display: inline-block;
 
 }
 
 
 #img-home{
+   /*  border:solid 2px grey;*/
     float:left;
-    width: 40%;
-    height: 700px;
-    opacity: 0.8;
+    width: 65%;
+    height: 100vh;
+    opacity: 0.5;
 
 }
 
 .text{
-    width:35%; 
-    margin-top: 250px;
-    margin-right: 150px;
-    float:right;
+    position: absolute;
+    width:45%; 
+    height:auto;
+    margin-top:200px;
+    margin-left: 45%;
+    box-sizing: border-box;
+    
+    
 }
 
+.text h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-variant: small-caps;
+    color: rgba(46, 46, 218, 0.685);
+    font-size: 35px;
+    width:auto; 
+    height: auto;
+    text-align: left;
+    line-height: 70px;
+}
 
+.text p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    color: rgba(46, 46, 218, 0.685);
+    font-style: oblique;
+    width:auto; 
+    height: auto;
+    text-align: left;
+    line-height: 200%;
+    box-sizing: border-box;
+}
 
 /*       Format Style About US */
+
+.about-page{
+    border: solid 2px grey;
+    align-items: center;
+    margin-top: 250px;
+    width: 80%;
+    margin-left: 10%;
+}
 
     #about{
         margin-top: 120px;
@@ -99,16 +141,10 @@ li{
 
 
     }
-    .about-page{
-    align-items: center;
-    margin-top: 250px;
-    width: 100%;
-
-
-    }
 
     .about-card{
-        margin-left: 100px;
+        margin-top:100px;
+        margin-left: 75px;
         border: solid 1px grey;
         border-radius: 15px;
         width: 25%;
@@ -127,21 +163,22 @@ li{
     /*       Format Style Blog */
 
     #blog-container{  
-        width: 90%;
-        height: 100%;
+        width: 80%;
+        margin-left: 5%;
+        height:75%;
         margin-top:80px;
-        margin-left:80px;
         display: inline-block;
     }
 
     #blog-container h2{
+      /*   border: solid 1px grey;*/
         padding-bottom: 25px;
         color:rgb(18, 54, 214)
 
     }
     
     #blog{
-        background-color: rgba(196, 196, 196, 0.2);
+        
         width: 70%;
         float: left;
 
@@ -149,6 +186,7 @@ li{
 
     .article-blog{
         color: rgb(8, 37, 8);
+        background-color: rgba(196, 196, 196, 0.2);
         width: auto;
         margin-top:25px;
         border:solid 1px rgb(58, 57, 57);
@@ -167,7 +205,7 @@ li{
         padding-left: 25px;
         width: 25%;
         float: right;
-        background-color: rgba(196, 196, 196, 0.2);
+        background-color: #E9EBF0;
         border-radius: 15px;
         height:650px;
         margin-top:25px;
@@ -177,7 +215,7 @@ li{
 
     #aside-blog h5{
     height: 45px;;
-    width: 35%;
+    width: 50%;
     margin: auto;
 }
 
@@ -191,10 +229,15 @@ li{
 /*       Format Style Business Card Block */
 
 #contact{
-    
+    border:solid 1px rgb(53, 33, 33);
+    border-radius: 15px;
+    background-image: url(/Buiness\ card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
     width: 90%;
+    margin-left: 5%;
     height: 450px;
-    margin-left:80px;
     margin-top: 70px;
 
 }
@@ -209,6 +252,7 @@ li{
 }
 
 #contact p{
+    color: #2E2EDA;
     font-style: italic;
     font-size: 25px;
     width: 75%;
@@ -216,33 +260,18 @@ li{
     height:auto;
 }
 
-#img-contact{
-    position: absolute;
-    opacity: 0.5;
-    width: 90%;
-    height: 450px;
-    border: solid 1px grey;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 
-    float: right;
-
-    
-}
 
 .ico-bild{
-    width: 55px;
-    opacity: 0.5;
-    border-radius: 50%;
+    width: 35px;
+    opacity: 0.9;
     margin-right: 30px;
 }
 
 #ico{
     float:right;
     display: block;
-    margin-top: 290px;
+    margin-top: 230px;
     margin-right: 80px;
 
 }
@@ -257,10 +286,10 @@ li{
 /*       Format Style Footer */
 
 footer{
-    background-color: grey;
     width: 90%;
+    margin-left: 5%;
+    background-color: grey;
     height: 180px;
-    margin-left:80px;
     margin-top: 50px;
     margin-bottom: 25px;
     border-radius: 25px;
